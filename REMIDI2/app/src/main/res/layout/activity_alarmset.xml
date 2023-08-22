@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- Medicine Intake Reminder Time (Clock) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectedTime"
+        android:text="00 : 00 PM"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        android:textSize="46dp"/>
+
+
+    <Button
+        android:id="@+id/selectTimeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/purple_700"
+        android:text="Select Time"
+        android:textColor="@color/white"
+        android:textSize="26dp" />
+
+    <Button
+        android:id="@+id/setAlarmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="26dp"
+        android:background="@color/purple_700"
+        android:text="Set Alarm"
+        android:textColor="@color/white"
+        android:textSize="26dp"/>
+
+    <Button
+        android:id="@+id/cancelAlarmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="26dp"
+        android:background="@color/purple_700"
+        android:text="Cancel Alarm"
+        android:textColor="@color/white"
+        android:textSize="26dp"/>
+
+
+</LinearLayout>

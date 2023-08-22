@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:text="Medicine Details"/>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:background="@color/purple_700"
+            android:text="Add"
+            android:textColor="@color/white" />
+
+        <!-- Medicine Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_medicine_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Medicine Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_medicine_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Doctor's name-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:boxBackgroundColor="@android:color/transparent"
+            android:hint="@string/Doctors"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="."
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Medicine Duration (Number of Days) -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_medicine_duration"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Medicine Duration (days)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_medicine_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Medicine Quantity -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_medicine_quantity"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Medicine Quantity">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_medicine_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Medicine input type-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="@string/Medintaketype">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="."
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Medicine Intake per Day -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_medicine_intake_per_day"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_margin="20dp"
+            android:hint="Medicine Intake per Day">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_medicine_intake_per_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            android:text="proceed"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>

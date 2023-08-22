@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">REMIDI</string>
+    <string name="Doctors">Doctor\'s Name</string>
+    <string name="Medintaketype">Medicine intake type</string>
+
+    <string-array name="spinner_items">
+        <item><color name="#DCDCDC">Select Medicine Intake Type</color></item>
+        <item>BDAC</item>
+        <item>BDPC</item>
+        <item>ODPC</item>
+        <item>TDPC</item>
+        <!-- Add more items as needed -->
+    </string-array>
+</resources>

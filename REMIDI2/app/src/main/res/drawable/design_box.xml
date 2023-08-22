@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background image -->
+    <item android:drawable="@drawable/background" />
+
+    <!-- Add any additional background elements or customization here if needed -->
+</layer-list>
